@@ -1,0 +1,44 @@
+silakka54 notes:
+
+vial config.f:
+define MASTER_LEFT can be changed to define MASTER_RIGHT to switch which side to plug in
+
+leertaste auf linker seite
+rechte erste daumentaste als enter?
+
+shift taste rechts, strg taste links?
+linke windowstaste relativ wichtig, kann man aber auch umlegen in ahk
+
+layer0: buchstaben und zahlen
+layer1: rechte hand ijlk pfeiltasten, uo pos1 und ende, backspace entf
+layer2: numpad
+layer3: dedicated gaming layer with esdf as wasd
+
+Homerow mods:
+My biggest problem with this setup is the accidental typos.
+I'm a German native speaker and we use many capitalized words, which means i need to press shift fairly often.
+Thus i need the delay time to be as short as possible (because waiting for shift to activate would just kill the typing flow).
+But then this would mean that i can no longer roll keys.
+Rolling keys is one of the most important techniques when it comes to typing fast.
+So either i have to pause for shift to activate every few words or I can just not type fast anymore.
+But not all hope is lost!
+To circumvent this, i would advice to use not a single home row modifier but to use combos instead!
+Instead of holding d, the combo of d + f is shift for me. no more accidental typos! I thus can get rid of the holding delay.
+d+f is shift, s+f is ctrl, a+f is alt and s+d is super.
+This has honestly transformed my typing experience!
+
+
+
+get.vial.today/manual/layers.html:
+    Moving Between Layers
+    Switching between what layer is active can be done in a few ways. In the lower palette, select the layer tab to view all the different options.
+
+    MO(layer) - momentarily activates the layer. As soon as you let go of the key, the layer is deactivated.
+    DF(layer) - changes which layer is the default layer. This stays until the device loses power.
+    TG(layer) - toggles the layer, activating it if it’s inactive and vice versa.
+    TT(layer) - aivated when you let go (like MO). If you repeatedly tap it, the layer will be toggled on or off (like TG). It needs 5 taps to do this.
+    OSL(layer) - momentarily activates the layer until the next key is pressed.
+    LT layer (kc) - momentarily activates the layer when it is held, sends a keycode when pressed. The keycode can be defined like all the other buttons, Just select the smaller box inside.
+    Additional Information on Layers
+    Transparency
+    The Triangle symbols represent Transparency. Those mean the action is the same as the layer below it. This is useful so that keys from different layers can be pressed at the same time.

@@ -1,26 +1,25 @@
-# Silakka54
+install QMK MSYS
+fork and clone vial-qmk to some folder
+start QMK MSYS
+cd to vial-qmk folder
+check if folder is correct with $ qmk env
+flash firmware with code below
+if some kind of chibios error occurs, try $ make git-submodule
+then you can edit keymap in vial and load the layout file (silakka54.vil)
 
-![Silakka54](https://i.imgur.com/JrsS0kY.png)
+Make example for this keyboard (after setting up your vial build environment):
 
-Silakka54 is a RP2040 Zero based 54-key column staggered split keyboard. PCB uses hotswap sockets. Design is inspired from REVIUNG41 and Corne keyboards.
-
-* Keyboard Maintainer: [Squalius-cephalus](https://github.com/Squalius-cephalus)
-* Hardware Supported: Silakka54 PCB
-* Hardware Availability: https://github.com/Squalius-cephalus/silakka54
-
-Make example for this keyboard (after setting up your build environment):
-
-    make silakka54:default
+    qmk compile -kb silakka54 -km vial
 
 Flashing example for this keyboard:
 
-    make silakka54:default:flash
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+    qmk compile -kb silakka54 -km vial
 
 ## Bootloader
 
 Enter the bootloader in 2 ways:
 
+
+* **Double tap reset button
 * **Physical boot button**: Hold BOOT button down and connect MCU to the PC
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
