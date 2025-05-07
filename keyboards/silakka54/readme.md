@@ -13,7 +13,7 @@ Make example for this keyboard (after setting up your vial build environment):
 
 Flashing example for this keyboard:
 
-    qmk compile -kb silakka54 -km vial
+    qmk flash -kb silakka54 -km vial
 
 ## Bootloader
 
